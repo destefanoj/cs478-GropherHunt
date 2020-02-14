@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!--Main text view that displays instructions-->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press below to play or\nto go to the main menu!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
+
+        <!--Button for Guess-by-guess mode-->
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/welcomeText"
+            android:text="Next Guess"
+            android:onClick="nextGuess"
+            android:visibility="invisible" />
+
+        <!--Button to bring you back to the main menu-->
+        <Button
+            android:id="@+id/mainMenuButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/welcomeText"
+            android:text="Main Menu"
+            android:onClick="mainMenu"
+            android:visibility="invisible" />
+
+        <!--Button to start continuous mode-->
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/welcomeText"
+            android:text="Start Game"
+            android:onClick="startGame"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/gopher2"
+            android:layout_toRightOf="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/welcomeText" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_weight="8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:columnCount="10"
+        android:rowCount="10"
+        android:alignmentMode="alignBounds"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/winnerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

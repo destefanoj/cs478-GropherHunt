@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Gopher Hunting</string>
+    <string name="game_desc">Welcome to Gopher Hunting!\nPlease select a mode to play in.</string>
+    <string name="t1Winner">THREAD 1 WINS!</string>
+    <string name="t2Winner">THREAD 2 WINS!</string>
+</resources>

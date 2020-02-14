@@ -1,0 +1,4 @@
+#Thu Feb 13 19:46:18 CST 2020
+base.0=/Users/jessicadestefano/Downloads/project4/app/build/intermediates/transforms/dexMerger/debug/9
+path.0=classes.dex
+renamed.0=classes.dex
